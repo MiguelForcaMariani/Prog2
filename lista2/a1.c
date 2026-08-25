@@ -2,7 +2,7 @@
 #include <stdlib.h>
 #include <windows.h>
 
-int main(void){
+void main(){
     SetConsoleOutputCP(65001);
     float a, b, s;
     printf("Digite o valor do primeiro número:");

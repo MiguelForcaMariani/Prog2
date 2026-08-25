@@ -3,7 +3,7 @@
 #include <windows.h>
 #include <math.h>
 
-int main(void){
+void main(){
     SetConsoleOutputCP(65001);
     float a, b, c, d, r1, r2;
     printf("Digite o valor de a:");

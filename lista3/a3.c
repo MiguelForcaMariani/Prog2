@@ -2,7 +2,7 @@
 #include <stdlib.h>
 #include <windows.h>
 
-int main(void){
+void main(){
     SetConsoleOutputCP(65001);
     int i, q, n, m;
     printf("Digite a quantidade de números a ser lida:");

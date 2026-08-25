@@ -2,7 +2,7 @@
 #include <stdlib.h>
 #include <windows.h>
 
-int main(void){
+void main(){
     SetConsoleOutputCP(65001);
     float km, d, v;
     printf("Digite a quantidade de kms percorridos pelo carro:");

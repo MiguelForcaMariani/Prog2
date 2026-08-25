@@ -2,7 +2,7 @@
 #include <stdlib.h>
 #include <windows.h>
 
-int main(void){
+void main(){
     SetConsoleOutputCP(65001);
     int d;
     printf("Digite um número de 1 a 7:");
