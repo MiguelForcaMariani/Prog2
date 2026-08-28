@@ -49,7 +49,7 @@ float circulo(char info[]){
     return(a);
 }
 
-int main() {
+void main() {
     SetConsoleOutputCP(65001);
     int opcao;
     char info[10];
@@ -66,5 +66,4 @@ int main() {
         break;
         }
     } while ( opcao > 0);
-return 0;
 }
