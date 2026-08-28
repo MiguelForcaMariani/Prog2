@@ -3,7 +3,7 @@
 #include <windows.h>
 #include <math.h>
 
-float valida(char eixo[9], float *n){
+void valida(char eixo[9], float *n){
     do{
     printf("\nDigite o valor do eixo das %s: ", eixo);
     scanf("%f", n);
@@ -13,7 +13,7 @@ float valida(char eixo[9], float *n){
     }while(isnan(*n));
 }
 
-float coordenada(float *x, float *y){
+void coordenada(float *x, float *y){
     char eixo[9];
     strcpy(eixo, "abscissas");
     valida(eixo, x);
@@ -21,11 +21,11 @@ float coordenada(float *x, float *y){
     valida(eixo, y);
 }
 
-float distancia(float x1, float y1, float x2, float y2, float *d){
+void distancia(float x1, float y1, float x2, float y2, float *d){
     *d = sqrt(pow((x2 - x1), 2) + pow((y2 - y1), 2));
 }
 
-int main(void){
+void main(){
     SetConsoleOutputCP(65001);
     float x1, y1, x2, y2, d;
     printf("\nCoordenadas 1:");
@@ -34,5 +34,4 @@ int main(void){
     coordenada(&x2, &y2);
     distancia(x1, y1, x2, y2, &d);
     printf("\nA distãncia é %.2f", d);
-return 0;
 }

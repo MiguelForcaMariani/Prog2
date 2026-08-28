@@ -2,7 +2,7 @@
 #include <stdlib.h>
 #include <windows.h> 
 
-float valida(char num[9], float *n){
+void valida(char num[9], float *n){
     do{
     printf("\nDigite o %s número: ", num);
     scanf("%f", n);
@@ -12,13 +12,13 @@ float valida(char num[9], float *n){
     }while(isnan(*n));
 }
 
-float multiplicar(float x, float y, float *r){
+void multiplicar(float x, float y, float *r){
     for(int i = 1; i <= y; i++){
         *r += x;
     }
 }
 
-int main(void){
+void main(){
     SetConsoleOutputCP(65001);
     float x, y, r;
     char num[9];
@@ -28,5 +28,4 @@ int main(void){
     valida(num, &y);
     multiplicar(x, y, &r);
     printf("O valor da multiplicação é %.2f", r);
-return 0;
 }
