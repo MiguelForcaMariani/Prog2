@@ -2,7 +2,7 @@
 #include <stdlib.h>
 #include <windows.h>
 
-void main(){
+int main(void){
     SetConsoleOutputCP(65001);
     float c, f;
     printf("Digite a temperatura em Cº:");

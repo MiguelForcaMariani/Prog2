@@ -3,7 +3,7 @@
 #include <windows.h>
 #include <math.h>
 
-void main(){
+int main(void){
     SetConsoleOutputCP(65001);
     float x;
     if(x<=1){

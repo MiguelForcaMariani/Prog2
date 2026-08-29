@@ -2,7 +2,7 @@
 #include <stdlib.h>
 #include <windows.h>
 
-void main(){
+int main(){
     SetConsoleOutputCP(65001);
     int n, i=1, v=0;
     printf("Digite o valor de N:");

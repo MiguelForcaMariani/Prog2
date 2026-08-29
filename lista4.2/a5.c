@@ -29,7 +29,7 @@ void potencia(float x, float y, float *r){
     }
 }
 
-void main(){
+int main(void){
     SetConsoleOutputCP(65001);
     float x, y, r = 0, of;
     int o;

@@ -45,7 +45,7 @@ void resultado(char str[], float media){
     }
 }
 
-void main(){
+int main(void){
     SetConsoleOutputCP(65001);
     int mat = matricula();
     float med = media();

@@ -18,7 +18,7 @@ void multiplicar(float x, float y, float *r){
     }
 }
 
-void main(){
+int main(void){
     SetConsoleOutputCP(65001);
     float x, y, r;
     char num[9];

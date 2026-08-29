@@ -2,7 +2,7 @@
 #include <stdlib.h>
 #include <windows.h>
 
-void main(){
+int main(void){
     SetConsoleOutputCP(65001);
     int n1, n2, n3, n4, n5, ma, me, n;
     printf("Digite a nota N°1:");

@@ -22,7 +22,7 @@ int jogarDados(){
     return soma;
 }
 
-void main(){
+int main(void){
     SetConsoleOutputCP(65001);
     srand( (unsigned)time(NULL) );
     int p, s, v = 0;

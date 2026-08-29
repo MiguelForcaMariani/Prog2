@@ -53,7 +53,7 @@ float total(float p, int q, char m){
     return(t);
 }
 
-void main(){
+int main(void){
     SetConsoleOutputCP(65001);
     float p = preco();
     int q = quantidade();

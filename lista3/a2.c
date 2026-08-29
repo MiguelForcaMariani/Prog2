@@ -2,7 +2,7 @@
 #include <stdlib.h>
 #include <windows.h>
 
-void main(){
+int main(){
     SetConsoleOutputCP(65001);
     int i;
     for(i=5; i<500; i+=5){

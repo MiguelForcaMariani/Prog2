@@ -2,7 +2,7 @@
 #include <stdlib.h>
 #include <windows.h>
 
-void main(){
+int main(){
     SetConsoleOutputCP(65001);
     int m, n, qh=0, qm=0, qdr=0, qdi=0, qdb=0, qa=0, qdbh=0, qdrh=0, qdih=0, qdbm=0, qdrm=0, qdim=0;
     float med=0, pdb, pdr, pdi, pdbh, pdrh, pdih, pdbm, pdrm, pdim;

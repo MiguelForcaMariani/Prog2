@@ -2,7 +2,7 @@
 #include <stdlib.h>
 #include <windows.h>
 
-void main(){
+int main(void){
     SetConsoleOutputCP(65001);
     int n;
     float a1, r, an;

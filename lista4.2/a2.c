@@ -25,7 +25,7 @@ void distancia(float x1, float y1, float x2, float y2, float *d){
     *d = sqrt(pow((x2 - x1), 2) + pow((y2 - y1), 2));
 }
 
-void main(){
+int main(void){
     SetConsoleOutputCP(65001);
     float x1, y1, x2, y2, x3, y3, d1, d2, d3, d;
     printf("\nCoordenadas 1:");
