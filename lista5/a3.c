@@ -11,10 +11,10 @@ void imprimir(int v[]){
 
 void preencher(int v[]){
     for(int i = 0; i < 20; i++){
-        if((i+1)%2 == 0){
-            v[i] = pow(i+1, 2);
+        if(i%2 == 0){
+            v[i] = pow((i+1), 2);
         }else{
-            v[i] = pow(i+1, 3);
+            v[i] = pow((i+1), 3);
         }
     }
 }
