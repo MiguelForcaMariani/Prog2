@@ -77,7 +77,7 @@ SetConsoleOutputCP(65001);
     printf("Digite a sua mensagem: ");
     msg = input();
     if(msg == NULL){
-        printf("\nNenhuma mensagem digitada ou ocorreu um erro na criptografia.\n");
+        printf("\nNenhuma mensagem digitada.\n");
         return 0;
     }
     substituir(msg);
