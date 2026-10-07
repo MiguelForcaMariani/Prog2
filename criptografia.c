@@ -31,7 +31,7 @@ void substituir(char *msg){
     trocar(msg, 'a', '@');
     trocar(msg, 'e', '&');
     trocar(msg, 'i', '$');
-    trocar(msg, 'o', '*');
+    trocar(msg, 'o', '+');
     trocar(msg, 'u', '#');
 }
 
@@ -51,11 +51,11 @@ void reagrupar(char *msg){
     char *str1 = malloc(tam1 + 1);
     char *str2 = malloc(tam2 + 1);
     for (size_t i = 0; i < tam1; i++){
-    str1[i] = msg[i * 2];
+        str1[i] = msg[i * 2];
     }
-    str1[tam1] = '\0';
+        str1[tam1] = '\0';
     for (size_t i = 0; i < tam2; i++){
-    str2[i] = msg[i * 2 + 1];
+        str2[i] = msg[i * 2 + 1];
     }
     str2[tam2] = '\0';
     inverte(str2);
@@ -72,16 +72,28 @@ void reagrupar(char *msg){
 }
 
 int main(){
-SetConsoleOutputCP(65001);
-    char *msg;
-    printf("Digite a sua mensagem: ");
-    msg = input();
-    if(msg == NULL){
-        printf("\nNenhuma mensagem digitada.\n");
-        return 0;
-    }
-    substituir(msg);
-    reagrupar(msg);
-    printf("\nSua mensagem criptografada é: %s", msg);
-    free(msg);
+
+    SetConsoleOutputCP(65001);
+    char *msg, op = 's';
+    do{
+        printf("Digite a sua mensagem a ser criptografada ou descriptografada: ");
+        msg = input();
+        if(msg == NULL){
+            printf("\nNenhuma mensagem digitada.\n");
+            return 0;
+        }
+        substituir(msg);
+        reagrupar(msg);
+        printf("\nSua mensagem criptografada/descriptografada é: %s", msg);
+        free(msg);
+        do{
+            printf("\nDeseja continuar utilizando o sistema? (S/N): ");
+            scanf(" %c", &op);
+            while(getchar() != '\n');
+            if(op != 's' && op != 'S' && op != 'n' && op != 'N'){
+                printf("\nOpção inválida.");
+            }
+        }while(op != 's' && op != 'S' && op != 'n' && op != 'N');
+    }while(op == 's' || op == 'S');
+    return 0;
 }
